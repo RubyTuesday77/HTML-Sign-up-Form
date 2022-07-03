@@ -38,9 +38,12 @@
                 <div>
                     <label for="city">Your City</label>
                     <input type="text" id="city" name="city">
-            <!-- Added State Input -->
-                <label for="state">Your State</label>
-                    <select name="state">
+                <!-- Added State Input -->
+                    <label for="state">Your State</label>
+                    <!-- Bonus: Added input tag for datalist  -->
+                    <input name="state" list="state-list">
+                    <!-- Bonus: Changed dropdown to datalist -->
+                    <datalist id="state-list">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -90,10 +93,10 @@
                         <option value="WV">West Virginia</option>
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
-                    </select>                
-                        <!-- Added Zip Input -->
+                    </datalist>                
+                <!-- Added Zip Input -->
                     <label for="zip">Your Zip Code</label>
-                <input type="number" id="zip" name="zip">
+                    <input type="number" id="zip" name="zip">
                 </div>
             </fieldset>
             <!-- Added second fieldset -->
@@ -102,6 +105,7 @@
                 <h3>Choose Your Location</h3>
                 <!-- Added radio buttons for selecting preferred destination -->
                 <div>
+                    <!-- Bonus: Pre-selected first location -->
                     <input type="radio" id="aruba" name="location" value="Aruba">
                     <label for="aruba">Aruba</label>
                 </div>
@@ -125,7 +129,8 @@
                 <!-- Added checkboxes for selecting extra add-ons -->
                 <h3>Please select any add-ons you'd like:</h3>
                 <div>
-                    <input type="checkbox" id="sauna" name="extras" value="Sauna Access"> 
+                    <!-- Bonus: Pre-selected first add-on -->
+                    <input type="checkbox" id="sauna" name="extras" value="Sauna Access" checked> 
                     <label for="sauna">Sauna Access</label>
                 </div>
                 <div>
@@ -138,7 +143,7 @@
                 </div>
                 <div>
                     <input type="checkbox" id="drinks" name="extras" value="Drinks Package"> 
-                    <label for="drinks">All-inclusive Drinks Package</label>
+                    <label for="drinks">All-Inclusive Drinks Package</label>
                 </div>
             </fieldset>
             <!-- Added Submit button -->
